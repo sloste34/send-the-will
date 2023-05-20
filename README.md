@@ -22,4 +22,4 @@
     - tailwindcss 설치
       | 구현 계획 | 실제 구현 | 이슈 및 해결 |
       |--------|---------|-----|
-      | tailwindcss를 사용해서 스타일링 적용해 보기 | | |
+      | tailwindcss를 사용해서 navbar에 임시로 스타일링 적용해 보기 | tailwindcss package 설치 및 navbar에 임시로 스타일 적용 | tailwindcss를 하나도 몰라서 공부하고 적용했다 |

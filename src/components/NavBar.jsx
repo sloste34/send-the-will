@@ -8,21 +8,24 @@ import { BsPerson } from 'react-icons/bs';
 function Navbar() {
   return (
     <>
-      <header className='header'>
-        <div className='header-title'>
-          <Link to='/'>
-            <GrSend />
-            <h1>Send The WILL</h1>
-          </Link>
-        </div>
-        <nav>
+      <header className='flex justify-between border-b border-black p-5'>
+        <Link to='/' className='flex items-center text-6xl'>
+          <GrSend />
+          <h1>Send The WILL</h1>
+        </Link>
+        <nav className='flex text-5xl items-center gap-9'>
           <Link to='/will'>
             <GiScrollQuill />
+            <p>Write a WILL</p>
           </Link>
           <Link to='/email'>
             <TfiEmail />
+            <p>Email List</p>
           </Link>
-          <BsPerson />
+          <div>
+            <BsPerson />
+            <p>Login</p>
+          </div>
         </nav>
       </header>
     </>
