@@ -18,8 +18,8 @@
   |--------|---------|-----|
   | 파이어베이스 프로젝트 만들기 / 각각 필요한 페이지 만들기 / React Router 이용해서 페이지랑 링크 연결하기 / Navbar 만들기 | 파이어베이스 프로젝트 생성 / 필요한 페이지 만들기 / React Router 사용해서 페이지 연결 / Navbar(스타일 아직) 만들기 | 서버는 Node.js는 아직 미숙해서 Firebase를 사용하기로 함 / React Router 관련해서 실력이 부족해서 다시 공부 해서 구현했다 |
 
-  - 2023년 5월 20일(토)
-    - tailwindcss 설치
-      | 구현 계획 | 실제 구현 | 이슈 및 해결 |
-      |--------|---------|-----|
-      | tailwindcss를 사용해서 navbar에 임시로 스타일링 적용해 보기 | tailwindcss package 설치 및 navbar에 임시로 스타일 적용 | tailwindcss를 하나도 몰라서 공부하고 적용했다 |
+- 2023년 5월 20일(토)
+  - tailwindcss 설치
+    | 구현 계획 | 실제 구현 | 이슈 및 해결 |
+    |--------|---------|-----|
+    | tailwindcss를 사용해서 navbar에 임시로 스타일링 적용해 보기 | tailwindcss package 설치 및 navbar에 임시로 스타일 적용 | tailwindcss를 하나도 몰라서 공부하고 적용했다 |

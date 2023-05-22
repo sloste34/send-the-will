@@ -4,6 +4,7 @@ import { GiScrollQuill } from 'react-icons/gi';
 import { GrSend } from 'react-icons/gr';
 import { TfiEmail } from 'react-icons/tfi';
 import { BsPerson } from 'react-icons/bs';
+import FirebaseGoogleSocialLogin from '../api/firebase';
 
 function Navbar() {
   return (
@@ -22,10 +23,10 @@ function Navbar() {
             <TfiEmail />
             <p>Email List</p>
           </Link>
-          <div>
+          <button onClick={FirebaseGoogleSocialLogin}>
             <BsPerson />
             <p>Login</p>
-          </div>
+          </button>
         </nav>
       </header>
     </>
