@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { GiScrollQuill } from 'react-icons/gi';
 import { GrSend } from 'react-icons/gr';
@@ -7,6 +7,11 @@ import { BsPerson } from 'react-icons/bs';
 import FirebaseGoogleSocialLogin from '../api/firebase';
 
 function Navbar() {
+  //로그인 정보를 위한 state
+  const [userInfo, setUserInfo] = useState();
+  const handleLogin = () => {
+    FirebaseGoogleSocialLogin().then(setUserInfo);
+  };
   return (
     <>
       <header className='flex justify-between border-b border-black p-5'>
@@ -23,7 +28,7 @@ function Navbar() {
             <TfiEmail />
             <p>Email List</p>
           </Link>
-          <button onClick={FirebaseGoogleSocialLogin}>
+          <button onClick={handleLogin}>
             <BsPerson />
             <p>Login</p>
           </button>

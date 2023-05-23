@@ -14,6 +14,7 @@ const provider = new GoogleAuthProvider();
 const auth = getAuth(app);
 
 async function FirebaseGoogleSocialLogin() {
+  //async로 비동기 함수라는 것을 표현
   return signInWithPopup(auth, provider)
     .then((result) => {
       const user = result.user;
