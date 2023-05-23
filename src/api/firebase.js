@@ -13,11 +13,12 @@ const app = initializeApp(firebaseConfig);
 const provider = new GoogleAuthProvider();
 const auth = getAuth(app);
 
-function FirebaseGoogleSocialLogin() {
-  signInWithPopup(auth, provider)
+async function FirebaseGoogleSocialLogin() {
+  return signInWithPopup(auth, provider)
     .then((result) => {
       const user = result.user;
       console.log(user);
+      return user;
     })
     .catch(console.error);
 }
