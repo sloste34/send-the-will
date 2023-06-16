@@ -18,19 +18,19 @@ function Navbar() {
   };
   return (
     <>
-      <header className='flex justify-between border-b border-black p-5'>
-        <Link to='/' className='flex items-center text-6xl'>
-          <GrSend />
-          <h1>Send The WILL</h1>
+      <header className='flex border-b border-black p-3 justify-between bg-zinc-500'>
+        <Link to='/' className='flex items-center'>
+          <GrSend className='text-4xl' />
+          <h1 className='text-3xl'>Send The WILL</h1>
         </Link>
-        <nav className='flex text-5xl items-center gap-9'>
-          <Link to='/will'>
-            <GiScrollQuill />
-            <p>Write a WILL</p>
+        <nav className='flex items-center gap-9'>
+          <Link to='/will' className='flex items-center'>
+            <GiScrollQuill className='text-3xl' />
+            <p className='text-2xl ml-1'>Write a WILL</p>
           </Link>
-          <Link to='/email'>
-            <TfiEmail />
-            <p>Email List</p>
+          <Link to='/email' className='flex items-center'>
+            <TfiEmail className='text-3xl' />
+            <p className='text-2xl ml-1'>Email List</p>
           </Link>
           {userInfo && (
             <button>
@@ -39,9 +39,9 @@ function Navbar() {
             </button>
           )}
           {!userInfo && (
-            <button onClick={handleLogout}>
-              <BsPersonCheckFill />
-              <p>Login</p>
+            <button onClick={handleLogout} className='flex items-center'>
+              <BsPersonCheckFill className='text-3xl' />
+              <p className='text-2xl ml-1'>Google Login</p>
             </button>
           )}
         </nav>
