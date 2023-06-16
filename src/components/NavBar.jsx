@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { GiScrollQuill } from 'react-icons/gi';
-import { GrSend } from 'react-icons/gr';
+import { FiSend } from 'react-icons/fi';
 import { TfiEmail } from 'react-icons/tfi';
 import { BsPersonCheckFill } from 'react-icons/bs';
 import { BsFillPersonXFill } from 'react-icons/bs';
@@ -18,10 +18,10 @@ function Navbar() {
   };
   return (
     <>
-      <header className='flex border-b border-black p-3 justify-between bg-zinc-500'>
+      <header className='flex border-b border-black p-3 justify-between bg-zinc-900 text-white'>
         <Link to='/' className='flex items-center'>
-          <GrSend className='text-4xl' />
-          <h1 className='text-3xl'>Send The WILL</h1>
+          <FiSend className='text-3xl' />
+          <h1 className='text-3xl ml-1'>Send The WILL</h1>
         </Link>
         <nav className='flex items-center gap-9'>
           <Link to='/will' className='flex items-center'>
